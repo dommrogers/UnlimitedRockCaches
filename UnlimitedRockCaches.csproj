@@ -45,8 +45,13 @@
 
     <!--This is the list of assemblies that the mod references. Most of these are unnecessary for normal mods, but are included here for completeness.-->
     <ItemGroup>
-        <Reference Include="MelonLoader" />
-        <Reference Include="0Harmony" />
-        <Reference Include="Assembly-CSharp" />
+        <Reference Include="MelonLoader"/>
+		<Reference Include="0Harmony"/>
+		<Reference Include="Il2CppInterop.Common"/>
+		<Reference Include="Il2CppInterop.Runtime"/>
+		<Reference Include="Assembly-CSharp"/>
+		<Reference Include="Il2Cppmscorlib"/>
+		<Reference Include="Il2CppSystem"/>
+		<Reference Include="UnityEngine.CoreModule"/>
     </ItemGroup>
 </Project>

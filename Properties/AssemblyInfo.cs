@@ -1,6 +1,5 @@
 using MelonLoader;
 using System.Reflection;
-using System.Runtime.InteropServices;
 
 //This is a C# comment. Comments have no impact on compilation.
 
@@ -12,9 +11,9 @@ using System.Runtime.InteropServices;
 //Version numbers in C# are a set of 1 to 4 positive integers separated by periods.
 //Mods typically use 3 numbers. For example: 1.2.1
 //The mod version need specified in three places.
-[assembly: AssemblyVersion("0.0.1")]
-[assembly: AssemblyFileVersion("0.0.1")]
-[assembly: MelonInfo(typeof(UnlimitedRockCaches.Implementation), "UnlimitedRockCaches", "0.0.1", "STBlade")]
+[assembly: AssemblyVersion("0.0.2")]
+[assembly: AssemblyFileVersion("0.0.2")]
+[assembly: MelonInfo(typeof(UnlimitedRockCaches.Implementation), "UnlimitedRockCaches", "0.0.2", "STBlade")]
 
 //This tells MelonLoader that the mod is only for The Long Dark.
 [assembly: MelonGame("Hinterland", "TheLongDark")]

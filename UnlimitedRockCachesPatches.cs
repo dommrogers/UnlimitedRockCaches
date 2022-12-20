@@ -1,14 +1,16 @@
 ﻿using HarmonyLib;
 using Il2Cpp;
 
+
 namespace UnlimitedRockCaches
 {
-    [HarmonyPatch(typeof(RockCacheManager), "HasReachedMaxRockCacheCount")]
-    internal class RockCacheManager_HasReachedMaxRockCacheCount
+    [HarmonyPatch(typeof(GameManager), "Awake")]
+    internal class GameManager_Awake
     {
-        private static void Postfix(ref bool __result)
+        private static void Postfix()
         {
-            __result = false;
+            GameManager.GetRockCacheManager().m_MaxRockCachesPerRegion = 999;
+            GameManager.GetRockCacheManager().m_MinDistanceBetweenRockCaches = 0.25f;
         }
     }
 }
